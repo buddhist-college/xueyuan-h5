@@ -1,0 +1,77 @@
+.header {
+  width: 100%;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: #fafcf9;
+  border-bottom: 1px solid #eee;
+}
+.header h1 {
+  font-size: 20px;
+}
+.header a {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-image: url('./title_returnback_btn.png');
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.container {
+  padding-top: 44px;
+}
+.tab-header {
+  display: flex;
+  gap: 20px;
+  margin: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.tab-header a {
+  flex: none;
+  display: block;
+  padding: 5px 0;
+  font-size: 16px;
+}
+.tab-header a.current {
+  font-weight: bold;
+  border-bottom: 2px solid #937c6a;
+}
+.tab-content {
+  border-top: 1px solid #eee;
+}
+.tab-content .item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.tab-content .row {
+  display: flex;
+  align-items: top;
+  gap: 10px;
+}
+.tab-content .row div {
+  line-height: 26px;
+}
+.tab-content .label {
+  flex: none;
+  color: #666;
+  width: 70px;
+  height: fit-content;
+  text-align: center;
+  background: #eee;
+  border-radius: 4px;
+}
+.tab-content h2 {
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 2px;
+}

@@ -1,0 +1,48 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- <link rel="icon" href="/assets/favicon.ico" /> -->
+    <title>全部計劃</title>
+    <link rel="stylesheet" href="/assets/common.css" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <script type="module" defer src="/assets/script.js"></script>
+  </head>
+  <body>
+    <div id="app" style="display: none">
+      <header class="header">
+        <a onclick="history.back()"></a>
+        <h1>全部計劃</h1>
+      </header>
+      <div class="container">
+        <div class="tab-header">
+          <a
+            v-for="(tab, i) in tabs"
+            :class="['tab', { current: currentIndex === i }]"
+            @click="currentIndex = i"
+          >{{ tab }}</a>
+        </div>
+        <div class="tab-content">
+          <section
+            v-for="item in data[currentIndex].items"
+            class="item"
+          >
+            <div class="row">
+              <div class="label">{{ item.type }}</div>
+              <h2>{{ item.title }}</h2>
+            </div>
+            <div class="row">
+              <div class="label">學習週期</div>
+              <div>{{ item.period }}</div>
+            </div>
+            <div class="row">
+              <div class="label">提交報告</div>
+              <div>{{ item.report }}</div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
