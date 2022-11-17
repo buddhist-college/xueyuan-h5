@@ -33,6 +33,9 @@
   overflow-x: auto;
   overflow-y: hidden;
 }
+.tab-header::-webkit-scrollbar {
+  display: none;
+}
 .tab-header a {
   flex: none;
   display: block;
