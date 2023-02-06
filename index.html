@@ -16,12 +16,14 @@
         <h1>課程計劃</h1>
       </header>
       <div class="container">
-        <div class="tab-header">
-          <a
-            v-for="(tab, i) in tabs"
-            :class="['tab', { current: currentIndex === i }]"
-            @click="currentIndex = i"
-          >{{ tab }}</a>
+        <div class="tab-header-wrap">
+          <div class="tab-header">
+            <a
+              v-for="(tab, i) in tabs"
+              :class="['tab', { current: currentIndex === i }]"
+              @click="currentIndex = i"
+            >{{ tab }}</a>
+          </div>
         </div>
         <div class="tab-content">
           <section
@@ -34,11 +36,11 @@
             </div>
             <div class="row">
               <div class="label">學習週期</div>
-              <div>{{ item.period }}</div>
+              <div class="desc">{{ item.period }}</div>
             </div>
             <div class="row">
               <div class="label">提交報告</div>
-              <div>{{ item.report }}</div>
+              <div class="desc">{{ item.report }}</div>
             </div>
           </section>
         </div>
