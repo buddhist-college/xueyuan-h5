@@ -4,7 +4,7 @@ export default {
     type: '必修',
     title: '淨土大經解演義',
     period: '全年度',
-    report: '每月一篇提交報告',
+    report: '每月提交一篇報告',
   }, {
     type: '必讀',
     title: '印光法師文鈔續編',
@@ -19,6 +19,6 @@ export default {
     type: '選修',
     title: '阿彌陀經疏鈔演義',
     period: '全年度',
-    report: '每月一篇提交報告',
+    report: '每月提交一篇報告',
   }],
 }
